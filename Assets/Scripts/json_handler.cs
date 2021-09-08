@@ -53,7 +53,7 @@ public class json_handler : MonoBehaviour
 
     // Start is called before the first frame update
 
-    string url = "http://lab.greedygame.com/arpit-dev/unity-assignment/templates/frame_only.json";
+   public string url = "http://lab.greedygame.com/arpit-dev/unity-assignment/templates/frame_only.json";
     void Start()
     {
         StartCoroutine(GetRequest_forJSON(url));
