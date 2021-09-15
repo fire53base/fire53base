@@ -53,7 +53,7 @@ public class json_handler : MonoBehaviour
 
     // Start is called before the first frame update
 
-   public string url = "http://lab.greedygame.com/arpit-dev/unity-assignment/templates/frame_only.json";
+   public string url = "http://lab.greedygame.com/arpit-dev/unity-assignment/templates/text_color.json";
     void Start()
     {
         StartCoroutine(GetRequest_forJSON(url));
@@ -142,6 +142,15 @@ public class json_handler : MonoBehaviour
                             {
                                 text_Display.color = newCol;
                             }
+                        }
+                        //op.input_text = "Test!";
+                        if(!String.IsNullOrEmpty( op.input_text))
+                        {
+                            text_Display.text = op.input_text;
+                        }
+                        else
+                        {
+                            text_Display.text = "";
                         }
                     }
             }
